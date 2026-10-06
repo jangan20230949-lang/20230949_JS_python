@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>지도 열기</h1>
+<button onclick="window.open('https://www.google.co.kr/maps/?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+    눌러라</button>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Loops</h1>
+<h2>The do...while Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = ""
+let i = 0;
+let sum = 0;
+
+do {
+  sum += i;
+  i+=5;
+}
+while (i <= 100);  
+
+
+document.getElementById("demo").innerHTML = "the number sum is " + sum;
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+
+
+<html>
+<body>
+<h1>JavaScript Loops</h1>
+<h2>The continue Statement</h2>
+
+<p>Skip the iteration step when i equals 3.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i = 10; i >= 1; i--) {
+  if (i === 3) { continue; }
+  text += i*1 + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Template Strings</h1>
+
+<p id="demo"></p>
+
+<script>
+let header = "Template Strings";
+let tags = ["template strings", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("demo").innerHTML = html;
+</script>
+
+</body>
+</html> -->
