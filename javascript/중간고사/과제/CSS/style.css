@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4faf5;
+}
+
+header {
+    background-color: #b8dfc4;
+    text-align: center;
+    padding: 30px;
+    color: #24513a;
+}
+
+main {
+    width: 92%;
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+.top-box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.search-area,
+.symptom-area {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+.search-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-row input {
+    flex: 1;
+}
+
+.symptom-area input {
+    width: 65%;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#searchBtn,
+#symptomBtn {
+    background-color: #9fd3af;
+    color: #1f4b34;
+}
+
+.filter-box {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    background-color: white;
+    border: 1px solid #8fc7a1;
+}
+
+.filter-btn.active {
+    background-color: #b8dfc4;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    gap: 20px;
+}
+
+.hospital-box {
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    max-height: 750px;
+    overflow-y: auto;
+}
+
+.hospital-card {
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.hospital-card h3 {
+    margin-top: 0;
+    color: #24513a;
+}
+
+.hospital-card p {
+    margin: 7px 0;
+}
+
+.status-open {
+    color: green;
+    font-weight: bold;
+}
+
+.status-closed {
+    color: red;
+    font-weight: bold;
+}
+
+.detail-btn {
+    background-color: #9fd3af;
+}
+
+.favorite-btn {
+    background-color: #ffe39b;
+}
+
+.map-box {
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+#mapArea {
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    backdrop-filter: blur(3px);
+
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 520px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    color: #24513a;
+
+    font-size: 25px;
+
+    padding-right: 60px;
+}
+
+.detail-info {
+    background-color: #f6faf7;
+
+    padding: 12px 14px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    line-height: 1.5;
+}
+
+.detail-open {
+    color: #198754;
+    font-weight: bold;
+}
+
+.detail-closed {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+#closeModal {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    background-color: #eeeeee;
+
+    color: #444;
+
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+#closeModal:hover {
+    background-color: #dddddd;
+}
+
+.map-move-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    background-color: #9fd3af;
+
+    color: #1f4b34;
+
+    font-weight: bold;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.map-move-btn:hover {
+    background-color: #8bc79e;
+}
+
+@media (max-width: 900px) {
+
+    .top-box {
+        flex-direction: column;
+    }
+
+    .search-area,
+    .symptom-area {
+        width: auto;
+    }
+
+    .content-box {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>장안대학교 주변 병원 찾기</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/javascript.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>장안대학교 주변 병원 찾기</h1>
+    <p>장안대학교 근처 병원을 검색할 수 있습니다.</p>
+</header>
+
+<main>
+
+    <section class="top-box">
+
+        <div class="search-area">
+
+            <h2>병원 검색</h2>
+
+            <div class="search-row">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="병원 이름 또는 진료과 입력"
+                >
+
+                <button id="searchBtn">
+                    검색
+                </button>
+            </div>
+
+            <div id="filterBox" class="filter-box"></div>
+
+            <select id="sortSelect">
+                <option value="distance">가까운 순</option>
+                <option value="name">이름순</option>
+                <option value="open">진료 중 우선</option>
+            </select>
+
+        </div>
+
+
+        <div class="symptom-area">
+
+            <h2>증상으로 진료과 찾기</h2>
+
+            <input
+                type="text"
+                id="symptomInput"
+                placeholder="예: 배가 아파요"
+            >
+
+            <button id="symptomBtn">
+                진료과 추천
+            </button>
+
+            <p id="symptomResult"></p>
+
+        </div>
+
+    </section>
+
+
+    <section class="content-box">
+
+        <div class="hospital-box">
+
+            <h2>병원 목록</h2>
+
+            <p id="hospitalCount"></p>
+
+            <div id="hospitalList"></div>
+
+        </div>
+
+
+        <div class="map-box">
+
+            <h2>주변 지도</h2>
+
+            <div id="mapArea"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <button id="closeModal">
+            닫기
+        </button>
+
+        <div id="modalInfo"></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
